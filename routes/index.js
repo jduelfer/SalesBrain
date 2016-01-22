@@ -5,9 +5,9 @@ var jsforce = require('jsforce');
 /* replace the following with whatever you need for your org */
 var oauth2 = new jsforce.OAuth2({
 	loginUrl: 'https://login.salesforce.com/',
-	clientId: '3MVG98_Psg5cppybYzGrIxYjPByOFK8RT6ZKXHxeqbf3630B_NevpQPwQ2SDRXyIINvOHfOLgUTRp7UtSnT.v',
-	clientSecret: '6775488296055634812',
-	redirectUri: 'https://salesbrain.herokuapp.com/callback'
+	clientId: '', //you must put your client id (or consumer id) her
+	clientSecret: '', //client secret here
+	redirectUri: 'https://localhost:3000/callback' //must change if doing production
 });
 
 router.get('/', function(req, res) {
