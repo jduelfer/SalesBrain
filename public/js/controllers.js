@@ -8,7 +8,7 @@ angular.module('BrainstormApp.controllers', [])
 		/*obviously an angular state machine would be a much better implementation,
 		but this is just a quick tutorial to test out the jsforce framework.
 		*/
-		$window.location.href = '/contact' + '?id=' + recordId;
+		$window.location.href = '/account' + '?id=' + recordId;
 	};
 })
 
@@ -21,7 +21,7 @@ angular.module('BrainstormApp.controllers', [])
 			success(function(data) {
 				console.log('yaayayy');
 				//redirect to contacts after post
-				$window.location.href = '/contacts';
+				$window.location.href = '/accounts';
 			}).error(function(err) {
 				console.error(err);
 			});

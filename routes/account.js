@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 	conn.sobject("Account").retrieve(accountId, function(err, result) {
 		if(err) {return console.error(err);}
 		console.log(result.Name);
-		res.render('contact',
+		res.render('account',
 		{
 			title : 'Success',
 			record : result

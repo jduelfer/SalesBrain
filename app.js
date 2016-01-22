@@ -15,9 +15,9 @@ var jsforce = require('jsforce');
 
 var routes = require('./routes/index');
 var callback = require('./routes/callback')
-var contacts = require('./routes/contacts');
-var contact = require('./routes/contact');
-var newContact = require('./routes/new');
+var accounts = require('./routes/accounts');
+var account = require('./routes/account');
+var newAccount = require('./routes/new');
 
 //initailize the express app
 var app = express();
@@ -36,9 +36,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/callback', callback);
-app.use('/contacts', contacts);
-app.use('/contact', contact);
-app.use('/new', newContact);
+app.use('/accounts', accounts);
+app.use('/account', account);
+app.use('/new', newAccount);
 
 app.use(function(req, res, next) {
 	var err = new Error('Not found');
