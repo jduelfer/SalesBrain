@@ -6,7 +6,7 @@ This demo is inspired by the MobilePack-AngularJS Demo pack released by develope
 Follow this link for a working demo connected to a dummy org: <a href="https://salesbrain.herokuapp.com/">SalesBrain</a>
 
 Or if you have your own org and would like to try it out with node, just clone the respository then do 
-<p> cd <path to repository>/SalesBrain </p>
+<p> cd ...path to repository/SalesBrain </p>
 <p> npm install </p>
 
 To download all the node packages. Once you are ready, replace the oauth contents in index.js with those of your Connected App and then the command:
