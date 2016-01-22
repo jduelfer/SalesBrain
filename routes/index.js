@@ -7,7 +7,7 @@ var oauth2 = new jsforce.OAuth2({
 	loginUrl: 'https://login.salesforce.com/',
 	clientId: '3MVG98_Psg5cppybYzGrIxYjPByOFK8RT6ZKXHxeqbf3630B_NevpQPwQ2SDRXyIINvOHfOLgUTRp7UtSnT.v',
 	clientSecret: '6775488296055634812',
-	redirectUri: 'http://localhost:3000/callback'
+	redirectUri: 'http://salesbrain.herokuapp.com/callback'
 });
 
 router.get('/', function(req, res) {

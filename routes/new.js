@@ -7,25 +7,6 @@ router.get('/', function(req, res, next) {
 	res.render('new');
 });
 
-/*
-conn.sobject("Account").create(
-		{ 
-			Name: "Testing Account"
-		}, function(err, ret) {
-		if (err || !ret.success) {return console.error(err, ret);}
-		console.log('created record id: ' + ret.id);
-		//now we need to look for the records again to show that they were updated.
-		conn.query("SELECT Name FROM Account", function(err, result) {
-			if(err) {return console.error(err);}
-			req.session.callbackRecords = result.records;
-			res.render('index',
-			{
-				title : 'Success',
-				records : result.records
-			});
-		});
-	});
-*/
 router.post('/', function (req, res) {
 	console.log(req.body.Name);
 	var accessToken = req.session.accessToken;
