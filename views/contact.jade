@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	include contact.html
+	script(type="text/javascript").
+		var account=!{JSON.stringify(record)}

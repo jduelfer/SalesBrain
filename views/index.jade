@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	include start.html
+	script(type="text/javascript").
+		var local_data=!{JSON.stringify(records)}
