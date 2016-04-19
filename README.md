@@ -4,7 +4,7 @@
 This demo is inspired by the MobilePack-AngularJS Demo pack released by developerforce, but instead of forcetk library, I am using JSForce which is pretty sweet. The app is very simple: it displays your org's accounts, let's you view them, and also let's you create new accounts (only the Name for now). It uses Oauth2 and single-sign on, making it part of the Salesforce experience, yet using the power of Node, Angular and Express. 
 
 ## Getting Started
-Follow this link for a working demo connected to a dummy org: <a href="https://salesbrain.herokuapp.com/">SalesBrain</a>
+Follow this link for a working demo connected to a dummy org: <a href="https://salesbrain.herokuapp.com/">SalesBrain</a>. If I haven't passed your the password by email sorry, you are going to have to take my word for it or follow the steps below!!
 
 Or if you have your own org and would like to try it out with node, just clone the respository then do 
 <p> cd ...path to repository/SalesBrain </p>
